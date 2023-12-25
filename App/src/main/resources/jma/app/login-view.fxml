@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<BorderPane cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="650.0" scaleShape="false" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jma.app.LoginController">
+<BorderPane cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="650.0" scaleShape="false" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jma.app.LoginController">
   <left>
     <AnchorPane prefHeight="425.0" prefWidth="315.0" style="-fx-background-color: #F4F6F6;" BorderPane.alignment="CENTER">
       <children>
-        <ImageView fitHeight="256.0" fitWidth="252.0" layoutX="32.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="256.0" fitWidth="252.0" layoutX="32.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
           <image>
             <Image url="@login.png" />
           </image>
         </ImageView>
+            <Label layoutX="71.0" layoutY="389.0" text="Copyright (c). All Rights Reserved." textFill="#0598ff">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
       </children>
     </AnchorPane>
   </left>
   <right>
     <AnchorPane prefHeight="425.0" prefWidth="453.0" style="-fx-background-color: #FDFEFE;" BorderPane.alignment="CENTER">
       <children>
-        <TextField fx:id="usernameTextField" layoutX="116.0" layoutY="170.0" onAction="#usernameTextFieldAction" promptText="User name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-        <PasswordField fx:id="passwordPasswordField" layoutX="116.0" layoutY="224.0" onAction="#passwordPasswordFieldAction" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <TextField fx:id="usernameTextField" layoutX="116.0" layoutY="170.0" promptText="User name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+        <PasswordField fx:id="passwordPasswordField" layoutX="116.0" layoutY="224.0" onAction="#loginButtonAction" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
         <Button fx:id="loginButton" layoutX="149.0" layoutY="310.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="28.0" prefWidth="65.0" style="-fx-background-color: #0598ff;" text="Login" textFill="WHITE" />
         <Text fill="#0598ff" layoutX="126.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Login">
           <font>
@@ -39,7 +38,7 @@
         <FontAwesomeIconView fill="#0598ff" glyphName="KEY" layoutX="87.0" layoutY="246.0" size="20" text="" />
         <FontAwesomeIconView fill="#0598ff" glyphName="USERS" layoutX="163.0" layoutY="72.0" size="35" />
         <Button layoutX="307.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
-        <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="89.0" layoutY="130.0" prefHeight="16.0" prefWidth="185.0" textFill="RED" />
+        <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="31.0" layoutY="128.0" prefHeight="16.0" prefWidth="302.0" textFill="RED" />
       </children>
     </AnchorPane>
   </right>
