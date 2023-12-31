@@ -6,13 +6,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="650.0" scaleShape="false" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jma.app.LoginController">
+<BorderPane cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="650.0" scaleShape="false" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jma.app.AppController">
   <left>
     <AnchorPane prefHeight="425.0" prefWidth="315.0" style="-fx-background-color: #F4F6F6;" BorderPane.alignment="CENTER">
       <children>
         <ImageView fitHeight="256.0" fitWidth="252.0" layoutX="32.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
           <image>
-            <Image url="@login.png" />
+            <Image url="@img/login.png" />
           </image>
         </ImageView>
             <Label layoutX="71.0" layoutY="389.0" text="Copyright (c). All Rights Reserved." textFill="#0598ff">
