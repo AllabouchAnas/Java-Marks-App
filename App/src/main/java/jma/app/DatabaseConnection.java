@@ -6,10 +6,13 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
 
+    //Local DataBase
     private static final String JDBC_NAME = "jma";
     private static final String JDBC_URL = "jdbc:mysql://localhost/" + JDBC_NAME;
     private static final String USER = "root";
     private static final String PASSWORD = "";
+
+
 
     public Connection getConnection() {
         Connection connection = null;
